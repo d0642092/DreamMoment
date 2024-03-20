@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> 首頁 </title>
+    <!-- <title>Page Title</title> -->
+    <!-- meta 用來描述網頁內容的標籤
+    Title 標題, description 內容摘要
+        顯示在搜尋結果頁面
+        <meta name=”description” content=”網頁內容敘述”>
+    Viewport 裝置顯示 
+        各裝置能正常顯示網頁
+        <meta name=”viewport” content=”width=device-width, initial-scale=1”>
+    Robots 拒絕檢視索引
+        特殊頁面不希望被爬蟲爬取或顯示於搜尋結果頁
+        <meta name=”robots” content=”noindex,nofollow”>
+    charset 字元編碼 
+        <meta charset="utf-8">
+    Hreflang 語種設定
+        讓不同地區的使用者能獲得對應的語種內容
+        <link rel=”alternate”  href=”網頁 URL” hreflang=”語言代碼”>
+    Canonical 網頁識別
+        類似頁面中何者才是最主要的網頁內容
+        <link rel=”canonical”  href=”網頁 URL”> 
+    -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <!-- jquery -->
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1">   -->
+    <!-- Due to myApp.use(express.static('./public')), change the path -->
+    <link rel="stylesheet" href="/style/main.css">
+    <link rel="stylesheet" href="/style/shared.css">
+    <script src="/js/animate.js"></script>
+    <script src="/js/initialize.js"></script>
+
+</head>
+
+<body>
+    <!-- Block one -- main page -->
+    <!-- navigation bar, call init_navigation in JS,  window.onload-->
+
+    <div class="container-fluid" id="bg-mainpage">
+        <h1>DreamMoment</h1>
+        <img src="/img/main.jpg" id="bg-image">
+        <button id="button-start">Start</button>
+    </div>
+        <!-- Block two -- icon link -->
+    <div class="container-fluid" id="icon-session">
+        <h2 align="center">資源管道</h2>
+        <div id="seperate"></div>
+        <!-- call init_icon_link in JS,  window.onload-->
+        <div class="set-div-middle row" id="icon-row1"></div>
+        <div class="set-div-middle row" id="icon-row2"></div>
+        <!-- call init_icon_link in JS, window.onload-->
+    </div>
+
+    <!-- Block three -- describe -->
+    <div class="para-txt">
+        <hr>
+        <h3 align="center">介紹</h3>
+        <div id="seperate"></div>
+        <div id="introduction-block">
+            <p id="introduction">
+                <i>DreamMoment</i>是一個為了幫助偏鄉居民而成立的專題。希望能透過提供各式學習管道與比賽資訊，幫助偏鄉居民成長茁壯，發光發熱。<br>
+                另一方面，我們也提供多種捐助管道與志工服務的機會，讓有志之士能為偏鄉居民盡一份心力。<br>
+                最後，在我們的網頁中能獲取簡易的原住民文化介紹，配合簡單的背景知識與志工的實地體驗，相信能成為一個良好的學習經驗。
+            </p>
+        </div>
+        <hr>
+    </div>
+
+    <!-- Block four -- information -->
+    <div>
+        <p id="contact-us">
+            DreamMoment
+            電話 : 0987654321<!--我隨便打的看要不要改-->
+            信箱 : DreamMoment@gmail.com<!--我隨便打的看要不要改-->
+            組員 : 王泓文、黃俊達、陳昱任、曾昱翔、張芯瑜、黃郁洺
+        </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+@font-face {
+    font-family: custom-serif;
+    src: local("標楷體"), local("微軟正黑體"), local("Microsoft JhengHei");
+    unicode-range: U+4E00-9FFF
+}
+@font-face {
+    font-family: custom-serif;
+    src: local('Times New Roman'),local(Times), local(serif);
+    unicode-range: U+00-024F
+}
+
+body {
+    font-family: custom-serif;
+    width: 100%;
+    background-color: rgba(224, 239, 241, 85);
+}
+a {
+    color: rgb(255, 255, 255);
+}
+a:hover{
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    text-decoration:none;
+}
+p{
+    text-indent: 2em;
+    white-space:pre-line;
+    height:auto;
+    text-align: justify;
+}
+
+/* navigation bar */
+.navbar-custom {
+    background-color: #1e90ff;
+    color: rgb(255, 255, 255);
+    /* float navigation bar, z-index :0: icon-block will be top layer, */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    /* float navigation bar */
+}
+/*  menu icon   */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-toggler {
+    border-color: rgb(255, 255, 255);
+}
+.navbar-collapse {
+    font-size: 20px;
+}
+
+
+#contact-us{
+    background-color:darkcyan;
+    text-align: center;
+    padding-bottom: 3%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+/* each page title */
+hr.upon {
+    border-top: 1px solid rgb(151, 151, 151);
+}
+#topic {
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+@media(max-width:768px){
+    .img-block{
+        max-width: 100%;
+    }
+    .desc-block{
+        min-width: 100%;
+    }
+}
+@media (max-width: 749px) {
+    .icon {
+        width: 5vw;
+    }
+    hr.upon {
+        width: 30vw;
+    }
+    #topic {
+        font-size: 16px;
+    }
+}
+@media (min-width: 750px) {
+    .icon {
+        width: 50px;
+    }
+    hr.upon {
+        width: 37vw;
+    }
+    #topic {
+        font-size: 20px;
+    }
+}
+
+
+/* check */
+/* div{
+    color:red;
+    border-style:solid;
+    border-width: 1px;
+} */

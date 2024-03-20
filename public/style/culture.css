@@ -1,0 +1,40 @@
+#culture{
+    text-align: center;
+    padding-bottom: 20px; 
+    font-weight: bold;
+}
+
+.culture-slide{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin-left: 5vw; 
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+.culture-block{
+    width: 100vw; 
+    height: 80vh;
+    font-size: 24px; 
+    padding-top: 7vh; 
+    margin-left: 5vw;
+    margin-right: 10vw;
+    margin-bottom: 10px;
+}
+
+
+.swiper-container {
+    z-index: 0;
+    margin-left: 10px;
+    width: 30vw;
+    height: 40vh;
+
+}
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+.culture-img{
+    width: 30vw;
+    height: 40vh;
+}

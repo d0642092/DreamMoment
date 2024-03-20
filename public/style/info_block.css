@@ -1,0 +1,10 @@
+/* information block */
+.para-txt{
+    font-size: 20px;
+}
+.img-block{
+    max-width: 30%;
+}
+.desc-block{
+    min-width: 70%;
+}

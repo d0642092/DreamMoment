@@ -1,0 +1,113 @@
+.set-div-middle{
+    display:flex;
+    justify-content: center;
+}
+/* block one */
+h1{
+    margin-top: clamp(1vh, 1-5vw 10vh);
+    font-size: clamp(1em, 10vw,9em);
+    color: white;
+    /* min-height: 70vh; */
+    max-height: 20vh;
+    /* background-image: url("/img/main.jpg");
+    background-size: 50%;
+    background-repeat: no-repeat; */
+    /* color: red; */
+}
+
+#bg-mainpage{
+    /* background-image: url("/img/main.jpg"); */
+    background-color: black;
+    background-size: 100%;
+    min-height: 100vh;
+    text-align: center;
+}
+#bg-image{
+    padding-top: clamp(1vh, 1-5vw 5vh);;
+    max-height: 70vh;
+    max-width: 80vw;
+}
+
+#button-start{
+    background-color: rgba(0, 225, 0, 1);
+    border: none;
+    text-decoration: none;
+    color:rebeccapurple;
+    font-size: 20px;
+    border-radius: 40px;
+    padding: 20px 60px;
+   
+}
+#button-start:hover {
+    background-color: rgba(0, 225, 255, 1);
+}
+
+/* block 2 */
+h2{
+    font-size: clamp(1em, 5vw,2em);
+    padding-top:6vh;
+}
+.icon-image{
+    max-width:40%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.icon-image:hover{
+    background-color: lightgray;
+}
+/*  margin:    t r b l    */
+.icon-block{
+    min-width:15%;
+    min-height: 20vh;
+    max-height: 50vh;
+    border-radius: 20px;
+    text-align: center;
+    /* margin: 10px 10px 10px 10px; */
+    margin: 1%;
+    border-style:solid;
+}
+#icon-title{
+    color:black;
+    font-size: 20px;
+}
+#icon-title:hover{
+    color: red;
+    font-weight: bold;
+}
+#icon-row1, #icon-row2{
+    max-height: 50vh;
+    margin:1% 2% 1% 2%;
+}
+#icon-session{
+    min-height: 100vh;
+    padding-top: 5vh;
+    /* background-color: lightgray; */
+    background-color: rgba(224, 239, 241, 85);
+}
+/* block 3 */
+.para-txt{
+    min-height:70vh;
+    margin-top:10%;
+    margin-bottom: 5%;
+}
+#seperate{
+    width: 10vw;
+    margin-left:45%; /* (100%-10%)/2 */
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-bottom-style: solid;
+    border-color: goldenrod;
+}
+#introduction-block{
+    max-width: 50vw;
+    border-style:dashed double none;
+    margin:5vh 25vw 0vh 25vw;
+}
+#introduction{
+    /*   詞斷行後的結果還是會溢出容器元素   */
+    /*     word-wrap:break-word; */
+    text-align: left;
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+    
+}

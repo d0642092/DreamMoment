@@ -19,26 +19,26 @@ show_information = (culture) =>{
 document.addEventListener("DOMContentLoaded", function () {
     console.log("Swiper initialized");
     var mySwiper = new Swiper('.swiper-container', {
-        // 您的 Swiper 配置选项
+        // Swiper 配置
         effect: 'cube',
-        // 其他配置选项
+        // 其他配置
         cubeEffect: {
-            slideShadows: true, // 在幻灯片两侧添加阴影
-            shadow: true, // 添加幻灯片的顶部阴影
-            shadowOffset: 20, // 阴影偏移量
-            shadowScale: 0.94 // 阴影缩放比例
+            slideShadows: true, // 兩側陰影
+            shadow: true, // 頂部陰影
+            shadowOffset: 20, // 偏移量
+            shadowScale: 0.94 // 縮放比
         },
         pagination: {
-            el: '.swiper-pagination', // 分页器容器的 CSS 选择器
-            clickable: true // 可点击切换幻灯片
+            el: '.swiper-pagination', // 分業器CSS選擇
+            clickable: true // 點擊
         },
         autoplay:{
-            delay: 3000,
+            delay: 3000, // ms
         },
         loop: true,
         on: {
             slideChangeTransitionEnd: function () {
-                // 获取当前幻灯片的 ID
+                // 當前ID
                 var activeSlideId = mySwiper.slides[mySwiper.activeIndex].id;
                 show_information(activeSlideId);
             }
